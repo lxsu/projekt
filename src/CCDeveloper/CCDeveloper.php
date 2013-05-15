@@ -10,7 +10,6 @@ Skapare: @mos
 /**
  * Controller for development and testing purpose, helpful methods for the developer.
  * 
-<<<<<<< HEAD
  * @package RajCore
  */
 class CCDeveloper extends CObject implements IController {
@@ -66,43 +65,6 @@ EOD;
 		$querystring  = $this->request->CreateUrl($url);
 		
 		$this->data['main'] .= <<<EOD
-=======
- * @package LydiaCore
- */
-class CCDeveloper implements IController {
-
-  /**
-    * Implementing interface IController. All controllers must have an index action.
-   */
-  public function Index() {  
-    $this->Menu();
-  }
-
-
-  /**
-    * Create a list of links in the supported ways.
-   */
-  public function Links() {  
-    $this->Menu();
-    
-    $ly = CLydia::Instance();
-    
-    $url = 'developer/links';
-    $current      = $ly->request->CreateUrl($url);
-
-    $ly->request->cleanUrl = false;
-    $ly->request->querystringUrl = false;    
-    $default      = $ly->request->CreateUrl($url);
-    
-    $ly->request->cleanUrl = true;
-    $clean        = $ly->request->CreateUrl($url);    
-    
-    $ly->request->cleanUrl = false;
-    $ly->request->querystringUrl = true;    
-    $querystring  = $ly->request->CreateUrl($url);
-    
-    $ly->data['main'] .= <<<EOD
->>>>>>> 18f8162ca307fff2f09a7621429d7af5f4a70daa
 <h2>CRequest::CreateUrl()</h2>
 <p>Here is a list of urls created using above method with various settings. All links should lead to
 this same page.</p>
@@ -114,7 +76,6 @@ this same page.</p>
 </ul>
 <p>Enables various and flexible url-strategy.</p>
 EOD;
-<<<<<<< HEAD
 	}
 
 
@@ -131,25 +92,6 @@ EOD;
 		
 		$this->data['title'] = "The Developer Controller";
 		$this->data['main'] = <<<EOD
-=======
-  }
-
-
-  /**
-    * Create a method that shows the menu, same for all methods
-   */
-  private function Menu() {  
-    $ly = CLydia::Instance();
-    $menu = array('developer', 'developer/index', 'developer/links');
-    
-    $html = null;
-    foreach($menu as $val) {
-      $html .= "<li><a href='" . $ly->request->CreateUrl($val) . "'>$val</a>";  
-    }
-    
-    $ly->data['title'] = "The Developer Controller";
-    $ly->data['main'] = <<<EOD
->>>>>>> 18f8162ca307fff2f09a7621429d7af5f4a70daa
 <h1>The Developer Controller</h1>
 <p>This is what you can do for now:</p>
 <ul>
@@ -158,8 +100,4 @@ $html
 EOD;
   }
   
-<<<<<<< HEAD
 } 
-=======
-}  
->>>>>>> 18f8162ca307fff2f09a7621429d7af5f4a70daa

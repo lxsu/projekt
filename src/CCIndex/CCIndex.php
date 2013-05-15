@@ -3,18 +3,13 @@
 CCIndex.php
 
 Beskrivning: CCIndex
-<<<<<<< HEAD
 Skapare: RaJ & Mos
-=======
-Skapare: RaJ
->>>>>>> 18f8162ca307fff2f09a7621429d7af5f4a70daa
 
 Vettiga länkar:
 http://php.net/manual/en/language.constants.predefined.php
 
 ================================================================================
 ------------------------------------------------------------------------------*/
-<<<<<<< HEAD
 class CCIndex extends CObject implements IController {
 
   /**
@@ -55,15 +50,3 @@ class CCIndex extends CObject implements IController {
   }
   
 } 
-=======
-
-class CCIndex implements IController {
-
-    public function Index() {   
-    global $ly;
-         
-       	$ly->data['title'] = "The Index Controller";
-       }
-
-    } 
->>>>>>> 18f8162ca307fff2f09a7621429d7af5f4a70daa

@@ -10,7 +10,6 @@ http://php.net/manual/en/language.constants.predefined.php
 
 ================================================================================
 ------------------------------------------------------------------------------*/
-<<<<<<< HEAD
 /**
  * Set level of error reporting
  */
@@ -123,11 +122,11 @@ $raj->config['routing'] = array(
  */
 $raj->config['menus'] = array(
  'navbar' => array(
-    'home'      => array('label'=>'Hem', 'url'=>'home'),
-    'modules'   => array('label'=>'Moduler', 'url'=>'module'),
-    'content'   => array('label'=>'Innehåll', 'url'=>'content'),
-    'guestbook' => array('label'=>'Gästbok', 'url'=>'guestbook'),
-    'blog'      => array('label'=>'Blogg', 'url'=>'blog'),
+    'home'      => array('label'=>'Home', 'url'=>'home'),
+    'modules'   => array('label'=>'Modules', 'url'=>'module'),
+    'content'   => array('label'=>'Content', 'url'=>'content'),
+    'guestbook' => array('label'=>'Guestbook', 'url'=>'guestbook'),
+    'blog'      => array('label'=>'Blog', 'url'=>'blog'),
   ),
   'my-navbar' => array(
     'home'      => array('label'=>'Om mig', 'url'=>'my'),
@@ -154,65 +153,10 @@ $raj->config['theme'] = array(
   'data' => array(
     'header' => 'RaJ',
     'slogan' => 'A PHP-based MVC-inspired CMF',
-    'favicon' => 'logo.png',
-    'logo' => 'logo.png',
+    'favicon' => 'logo_80x80.png',
+    'logo' => 'logo_80x80.png',
     'logo_width'  => 80,
     'logo_height' => 80,
     'footer' => '<p>RaJ buildt on Lydia &copy; by Mikael Roos (mos@dbwebb.se)</p>',
   ),
-=======
-
-error_reporting(-1);
-ini_set('display_errors', 1);
-
-/* -------------------------------------------------
-Base URL
-------------------------------------------------- */
-
-	$ly->config['base_url'] = null;
-
-/* -------------------------------------------------
-Define SESSION-name
-------------------------------------------------- */
-	
-	$ly->config['session_name'] = preg_replace('/[:\.\/-_]/', '', $_SERVER["SERVER_NAME"]);
-
-/* -------------------------------------------------
-Define server timezone
-------------------------------------------------- */
-
-	$ly->config['timezone'] = 'Europe/Stockholm';
-
-/* -------------------------------------------------
-Define encoding
-------------------------------------------------- */
-
-	$ly->config['character_encoding'] = 'UTF-8';
-
-/* -------------------------------------------------
-Länkquery
-
-    * default      = 0      => index.php/controller/method/arg1/arg2/arg3
-    * clean        = 1      => controller/method/arg1/arg2/arg3
-    * querystring  = 2      => index.php?q=controller/method/arg1/arg2/arg3
-------------------------------------------------- */
-
-    $ly->config['url_type'] = 1;
-
-/* -------------------------------------------------
-Controller Array
-------------------------------------------------- */	
-
-$ly->config['controllers'] = array(
-  'index'     => array('enabled' => true,'class' => 'CCIndex'),
-);
-
-/* -------------------------------------------------
-THEME
-------------------------------------------------- */
-	
-$ly->config['theme'] = array(
-  // The name of the theme in the theme directory
-  'name'    => 'core',
->>>>>>> 18f8162ca307fff2f09a7621429d7af5f4a70daa
 );

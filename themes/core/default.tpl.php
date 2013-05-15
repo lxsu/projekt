@@ -1,5 +1,4 @@
 <!doctype html>
-<<<<<<< HEAD
 <html lang='en'> 
 <head>
   <meta charset='utf-8'/>
@@ -32,24 +31,6 @@
       <?=$footer?>
       <?=get_debug()?>
     </div>
-=======
-<html lang="sv">
-<head>
-  <meta charset="utf-8">
-  <title><?=$title?></title>
-  <link rel="stylesheet" href="<?=$stylesheet?>">
-</head>
-<body>
-  <div id="header">
-    <?=$header?>
-  </div>
-  <div id="main" role="main">
-    <?=$main?>
-    <?=get_debug()?>
-  </div>
-  <div id="footer">
-    <?=$footer?>
->>>>>>> 18f8162ca307fff2f09a7621429d7af5f4a70daa
   </div>
 </body>
 </html>
