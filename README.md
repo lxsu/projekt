@@ -17,7 +17,7 @@ går det bra att besöka https://github.com/Rojo13/raj-lydia
 
 2: Installation
 
-<<<<<<< HEAD
+
 För att kunna installera ramverket, krävs det givetvis att du laddar upp ramverket mot FTP eller kör det lokalt. Du kan exempelvis använda dig av FileZilla om du skall ladda upp det mot en FTP alternativt WampServer om du skall köra det lokalt. Väl uppladdat så går du in under /module/install för att installera ditt ramverk. Innan du gör detta så måste du sätta rättigheter på två mappar. ./site/data samt ./themes. Vad det gäller mappen themes så är det viktigt att du väljer att rättigheterna är dem samma för mappen samt alla undermappar. Då ./data inte har några undermappar räcker det med att bara ställa in rättigheterna för just den. Det skall gå att skriva, läsa och ändra i filerna. Vid demo-installationen, användes chmod 777.
 
     chmod777 - ./data
@@ -25,8 +25,6 @@ För att kunna installera ramverket, krävs det givetvis att du laddar upp ramverk
 
 Adress för att nå installation:
 
-=======
->>>>>>> branch 'master' of https://github.com/Rojo13/projekt.git
     http://your.url/module/install
 
 OBS!
