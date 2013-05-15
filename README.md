@@ -2,17 +2,17 @@
 //
 // README RaJ-FrameWork
 //
-// -------------------------------------------------------------------------------------------
+// ===========================================================================================
 
 1: Nerladdning
 
-Du kan ladda ner ramverket RaJ frÃ¥n GitHub. Detta gÃ¶r du lÃ¤ttast genom att clona ramverket genom
+Du kan ladda ner ramverket RaJ från GitHub. Detta gör du lättast genom att clona ramverket genom
 kommando:
 
-    git clone https://github.com/Rojo13/raj-lydia.git 
+    git clone https://github.com/Rojo13/projekt.git
 
-Om du vill se kÃ¤llkoden eller av nÃ¥gon annan anledning vill ha tillgÃ¥ng till ramverkets filer,
-gÃ¥r det bra att besÃ¶ka https://github.com/Rojo13/raj-lydia
+Om du vill se källkoden eller av någon annan anledning vill ha tillgång till ramverkets filer,
+går det bra att besöka https://github.com/Rojo13/raj-lydia
 
 
 2: Installation
@@ -21,38 +21,38 @@ gÃ¥r det bra att besÃ¶ka https://github.com/Rojo13/raj-lydia
 
 OBS!
 
-Om du vÃ¤ljer att ladda upp den klonade mappen istÃ¤llet fÃ¶r att lÃ¤gga innehÃ¥llet direkt i root,
-mÃ¥ste du Ã¤ndra i .htaccess. Detta Ã¤r av yttersta vikt.
+Om du väljer att ladda upp den klonade mappen istället för att lägga innehållet direkt i root,
+måste du ändra i .htaccess. Detta är av yttersta vikt.
 
-Exempel, du laddar upp hela mappen (raj), adressen blir dÃ¥
+Exempel, du laddar upp hela mappen (raj), adressen blir då
     
     http://your.url/raj/module/install
 
-Denna sÃ¶kvÃ¤g mÃ¥ste lÃ¤ggas till, bytas ut, i .htaccess.
+Denna sökväg måste läggas till, bytas ut, i .htaccess.
 
 
 3: Modifiera
 
-FÃ¶r att modifiera de mest basala delarna i ramverket; sÃ¥som logga, header, footer - krÃ¤vs det frÃ¤mst en texteditor och en FTP-client. Det skadar dock inte med ett uns kunskap i HTML/CSS.
+För att modifiera de mest basala delarna i ramverket; såsom logga, header, footer - krävs det främst en texteditor och en FTP-client. Det skadar dock inte med ett uns kunskap i HTML/CSS.
 
 3.1: Byta logga:
 
-Att byta logga Ã¤r relativt enkelt. Det som kan vara lite klurigt Ã¤r i vilken storlek loggan skall vara i. Under ramverkets uppbyggnad sÃ¥ Ã¤r storlekarna 80x80 samt 110x90 testade fÃ¶r loggan. Dessa mÃ¥tt ser trevliga ut men det betyder inte att detta Ã¤r de enda alternativ att vÃ¤lja mellan. Bredden kan troligen vara i avsevÃ¤rt hÃ¶gre tal.
+Att byta logga är relativt enkelt. Det som kan vara lite klurigt är i vilken storlek loggan skall vara i. Under ramverkets uppbyggnad så är storlekarna 80x80 samt 110x90 testade för loggan. Dessa mått ser trevliga ut men det betyder inte att detta är de enda alternativ att välja mellan. Bredden kan troligen vara i avsevärt högre tal.
 
-    # Ladda upp Ã¶nskad logga i /site/themes/mytheme
-    # FÃ¶r att fÃ¥ det att fungera direkt sÃ¥ dÃ¶p filen till logo.png
-    # Om du Ã¶nskar annat namn sÃ¥ Ã¤r det viktigt att du Ã¤ndrar sÃ¶kvÃ¤gen till loggan i /site/config.php
-    # I config Ã¤ndrar du ocksÃ¥ om du vill anvÃ¤nda en annan filtyp, exempelvis .jpg
+    # Ladda upp önskad logga i /site/themes/mytheme
+    # För att få det att fungera direkt så döp filen till logo.png
+    # Om du önskar annat namn så är det viktigt att du ändrar sökvägen till loggan i /site/config.php
+    # I config ändrar du också om du vill använda en annan filtyp, exempelvis .jpg
 
 3.2: Byta favicon:
 
-Som standard Ã¤r instÃ¤llningarna att ramverket anvÃ¤nder samma fil till bÃ¥de loggan och favicon. Din logga blir alltsÃ¥ pÃ¥ automatic Ã¤ven favicon. Om du vill ha olika bild, sÃ¥ gÃ¥r detta givetvis att Ã¤ndra.
+Som standard är inställningarna att ramverket använder samma fil till både loggan och favicon. Din logga blir alltså på automatic även favicon. Om du vill ha olika bild, så går detta givetvis att ändra.
 
-    # Ã–ppna /site/config.php
-    # Scrolla lÃ¤ngst ner i filen fÃ¶r att hitta instÃ¤llningarna.
+    # Öppna /site/config.php
+    # Scrolla längst ner i filen för att hitta inställningarna.
 
 
-SÃ¥hÃ¤r ser instÃ¤llningsraderna ut:
+Såhär ser inställningsraderna ut:
 
         ### 'favicon' => 'logo.png',
         ### 'logo' => 'logo.png',
@@ -60,37 +60,37 @@ SÃ¥hÃ¤r ser instÃ¤llningsraderna ut:
         ### 'logo_height' => 80,
 
 
-3.3: Ã„ndra webbsidans titel/slogan:
+3.3: Ändra webbsidans titel/slogan:
 
-Som standard sÃ¥ Ã¤r headern/namnet pÃ¥ sidan "RaJ". Som slogan, vilket fortsÃ¤tter som standard pÃ¥ samma rad, kommer "A PHP-based MVC-inspired CMF". Dessa rader kan du givetvis Ã¤ndra till Ã¶nskad text.
+Som standard så är headern/namnet på sidan "RaJ". Som slogan, vilket fortsätter som standard på samma rad, kommer "A PHP-based MVC-inspired CMF". Dessa rader kan du givetvis ändra till önskad text.
 
-    # Ã–ppna /site/config.php
-    # Scrolla lÃ¤ngst ner i filen fÃ¶r att hitta instÃ¤llningarna.
+    # Öppna /site/config.php
+    # Scrolla längst ner i filen för att hitta inställningarna.
 
-SÃ¥hÃ¤r ser instÃ¤llningsraderna ut:
+Såhär ser inställningsraderna ut:
 
         ### 'header' => 'RaJ',
         ### 'slogan' => 'A PHP-based MVC-inspired CMF',
 
 3.4: Modifiera footer
 
-Att modifiera footern Ã¤r minst lika lÃ¤tt i RaJ-ramverket som tidigare instÃ¤llningar. Footern Ã¤r dock indelad i tvÃ¥ olika omrÃ¥den. Det fÃ¶rsta omrÃ¥det handlar om fri text. HÃ¤r kan du exempelvis placera din copyright eller kontakt uppgift. Det andra omrÃ¥det anvÃ¤nds som standar till lÃ¤nkar. 
+Att modifiera footern är minst lika lätt i RaJ-ramverket som tidigare inställningar. Footern är dock indelad i två olika områden. Det första området handlar om fri text. Här kan du exempelvis placera din copyright eller kontakt uppgift. Det andra området används som standar till länkar. 
 
     Copyright/kontakt:
 
-    # Ã–ppna /site/config.php
-    # Scrolla ner i filen fÃ¶r att hitta instÃ¤llningarna.
+    # Öppna /site/config.php
+    # Scrolla ner i filen för att hitta inställningarna.
 
-        SÃ¥hÃ¤r ser instÃ¤llningsraden ut:
+        Såhär ser inställningsraden ut:
 
             ### 'footer' => '<p>RaJ buildt on Lydia &copy; by Mikael Roos (mos@dbwebb.se)</p>',
 
-    LÃ¤nkar:
+    Länkar:
 
-    # Ã–ppna /themes/functions.php
-    # HÃ¶gst upp i filen hittar du raderna fÃ¶r lÃ¤nkarna
+    # Öppna /themes/functions.php
+    # Högst upp i filen hittar du raderna för länkarna
 
-        SÃ¥hÃ¤r ser instÃ¤llningsradernas bÃ¶rjan ut:
+        Såhär ser inställningsradernas början ut:
 
             ### function get_tools() {
             ### global $raj;
@@ -103,40 +103,40 @@ Att modifiera footern Ã¤r minst lika lÃ¤tt i RaJ-ramverket som tidigare instÃ¤ll
 
 4: Skapa en sida / Blogg
 
-FÃ¶r att skapa en sida eller ett blogginlÃ¤gg, anvÃ¤nder du dig av kontrollern content. Med denna kontroller har du fÃ¶rutsÃ¤ttningar till att bÃ¥de skapa och editera sidor och blogginlÃ¤gg. Viktigt att tÃ¤nka pÃ¥ Ã¤r dock att det INTE, genom denna funktion, gÃ¥r att Ã¤ndra pÃ¥ de sidor som finns i navigeringsmenyn ("Om mig", "Blogg", "GÃ¤stbok"). Detta innebÃ¤r att du varken kan lÃ¤gga till eller ta bort denna typen av sidor via kontrollern. En annan viktig del i ditt skapande Ã¤r att du Ã¤r inloggad nÃ¤r du skall lÃ¤gga till nÃ¥got nytt pÃ¥ sidan.
+För att skapa en sida eller ett blogginlägg, använder du dig av kontrollern content. Med denna kontroller har du förutsättningar till att både skapa och editera sidor och blogginlägg. Viktigt att tänka på är dock att det INTE, genom denna funktion, går att ändra på de sidor som finns i navigeringsmenyn ("Om mig", "Blogg", "Gästbok"). Detta innebär att du varken kan lägga till eller ta bort denna typen av sidor via kontrollern. En annan viktig del i ditt skapande är att du är inloggad när du skall lägga till något nytt på sidan.
 
 4.1 Blogg
 
-Bloggens grund kommer fÃ¤rdig och det du troligen Ã¤r mest intresserad av, Ã¤r att fylla den med information som Ã¤r vettig fÃ¶r just dig. Detta gÃ¶ra du, som tidigare nÃ¤mnts, genom att logga in via:
+Bloggens grund kommer färdig och det du troligen är mest intresserad av, är att fylla den med information som är vettig för just dig. Detta göra du, som tidigare nämnts, genom att logga in via:
 
     http://your.url/user/login
 
-Efter att du fyllt i anvÃ¤ndaruppgifterna och Ã¤r redo fÃ¶r att fylla bloggen med information, anvÃ¤nder du:
+Efter att du fyllt i användaruppgifterna och är redo för att fylla bloggen med information, använder du:
 
     http://your.url/content/create
 
-PÃ¥ denna sida kan du enkelt skapa inlÃ¤gg till din blogg. Du fyller helt enkelt i; 
+På denna sida kan du enkelt skapa inlägg till din blogg. Du fyller helt enkelt i; 
 
-        titel - inlÃ¤ggets titel
-        nyckel - exmpelvis "inlÃ¤ggets-titel-med-bindesstreck"
-        innehÃ¥ll - Ã¶nskat innehÃ¥ll
+        titel - inläggets titel
+        nyckel - exmpelvis "inläggets-titel-med-bindesstreck"
+        innehåll - önskat innehåll
         typ - "post"
 
 4.2 Sida
 
-Precis som fÃ¶r bloggen mÃ¥ste du vara inloggad fÃ¶r att skapa en sida. Som tidigare nÃ¤mts dÃ¥ loggar du in genom:
+Precis som för bloggen måste du vara inloggad för att skapa en sida. Som tidigare nämts då loggar du in genom:
 
     http://your.url/user/login
 
-VÃ¤l inloggad sÃ¥ gÃ¶r du likt bloggen, gÃ¥ in pÃ¥ 
+Väl inloggad så gör du likt bloggen, gå in på 
 
     http://your.url/content/create
 
-Och fyll i, precis som fÃ¶r bloggen
+Och fyll i, precis som för bloggen
 
-        titel - inlÃ¤ggets titel
-        nyckel - exmpelvis "inlÃ¤ggets-titel-med-bindesstreck"
-        innehÃ¥ll - Ã¶nskat innehÃ¥ll
+        titel - inläggets titel
+        nyckel - exmpelvis "inläggets-titel-med-bindesstreck"
+        innehåll - önskat innehåll
         typ - "page"
 
-Skillnaden Ã¤r dock att typen skall Ã¤ndras sÃ¥ att det inte registreras som ett blogginlÃ¤gg. Typen skall stÃ¥ som "page", likt ovan beskrivning.
+Skillnaden är dock att typen skall ändras så att det inte registreras som ett blogginlägg. Typen skall stå som "page", likt ovan beskrivning.
