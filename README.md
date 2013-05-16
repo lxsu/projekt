@@ -20,7 +20,9 @@ går det bra att besöka https://github.com/Rojo13/raj-lydia
 
 För att kunna installera ramverket, krävs det givetvis att du laddar upp ramverket mot FTP eller kör det lokalt. Du kan exempelvis använda dig av FileZilla om du skall ladda upp det mot en FTP alternativt WampServer om du skall köra det lokalt. Väl uppladdat så går du in under /module/install för att installera ditt ramverk. Innan du gör detta så måste du sätta rättigheter på två mappar. ./site/data samt ./themes. Vad det gäller mappen themes så är det viktigt att du väljer att rättigheterna är dem samma för mappen samt alla undermappar. Då ./data inte har några undermappar räcker det med att bara ställa in rättigheterna för just den. Det skall gå att skriva, läsa och ändra i filerna. Vid demo-installationen, användes chmod 777.
 
-    chmod777 - ./data
+Vad det gäller mappen ./data, så är detta en mapp du själv måste skapa inne i ./site. Detta är alltså ingenting som följer med ifrån klonen.
+
+    chmod777 - ./scr/data
     chmod777 - ./themes/ + undermappar.
 
 Adress för att nå installation:
